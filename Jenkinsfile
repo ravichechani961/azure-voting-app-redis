@@ -7,7 +7,7 @@ pipeline {
             echo "$GIT_BRANCH"
              def dockerHome = tool 'myDocker'
             env.PATH = "${dockerHome}/bin:${env.PATH}"
-            echo ${PATH}
+            echo "${env.PATH}"
          }
       }
       stage('Docker Build') {
