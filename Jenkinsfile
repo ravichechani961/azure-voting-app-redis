@@ -27,10 +27,10 @@ pipeline {
             """)
          }
          post {
-            success {
+            failure {
                echo "App started successfully :)"
             }
-            failure {
+            success {
                echo "App failed to start :("
             }
          }
